@@ -1,0 +1,51 @@
+# 体积 / 运行时（自行安装：见 README「从源码运行」）
+runtime/
+node_modules/
+
+# 生成 / 临时文件
+output/
+uploads/
+*.log
+server.log
+
+# 视频 / 媒体素材（不上传）
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.flv
+
+# 一次性运维脚本（含具体账户ID，非产品代码）
+auto_gen.js
+upload_to_adv.js
+upload_batches.js
+scan_batches.js
+verify_adv.js
+verify_0617.js
+verify_0621.js
+verify_0622.js
+verify_0624.js
+verify_sg.js
+_batch_items.json
+auto_gen_result.json
+upload_adv_result.json
+upload_batches_result.json
+
+# 机器特定后台保活（路径写死，仅本机用）
+_autostart.vbs
+_watchdog.vbs
+
+# 密钥 / 配置（实际在外部数据目录，这里防御性排除）
+llm_config.json
+minimax_config.json
+config.json
+.env
+
+# 编辑器 / 代理 / 系统
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
